@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input, select, button {
+      margin: 5px;
+      padding: 5px;
+    }
+    .expense-item {
+      margin: 5px 0;
+    }
+    .expense-item button {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Expense Tracker</h2>
+
+  <input type="number" id="amount" placeholder="Choose expense amount">
+  <input type="text" id="description" placeholder="Choose description">
+  <select id="category">
+    <option value="Movie">Movie</option>
+    <option value="Food">Food</option>
+    <option value="Fuel">Fuel</option>
+    <option value="Shopping">Shopping</option>
+  </select>
+  <button id="addBtn">Add Expense</button>
+
+  <ul id="expenseList"></ul>
+
+  <!-- Linking JS file -->
+  <script src="index.js"></script>
+</body>
+</html>
